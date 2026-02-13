@@ -4,13 +4,49 @@ import os
 from datetime import datetime
 from utils import detect_columns
 
-file = input("Enter Excel/CSV path: ").strip()
+def find_file(path):
+    if os.path.exists(path) and os.path.isfile(path):
+        return path
+    
+    # Check in sample_data folder
+    alt_path = os.path.join("sample_data", path)
+    if os.path.exists(alt_path) and os.path.isfile(alt_path):
+        print(f"💡 Auto-detected in folder: {alt_path}")
+        return alt_path
+    
+    # List available files if not found
+    print(f"❌ Error: '{path}' not found.")
+    print("\nSuggested files you can use:")
+    extensions = (".csv", ".xlsx", ".xls")
+    found_any = False
+    for root, dirs, files in os.walk("."):
+        if any(ignored in root for ignored in ["reports", ".git", "__pycache__"]):
+            continue
+        for f in files:
+            if f.endswith(extensions):
+                rel_path = os.path.relpath(os.path.join(root, f), ".")
+                print(f" - {rel_path}")
+                found_any = True
+    
+    if not found_any:
+        print(" (No Excel or CSV files found in the project)")
+    return None
+
+file_input = input("Enter Excel/CSV path (e.g., sales_data.csv): ").strip()
+file = find_file(file_input)
+
+if not file:
+    exit()
 
 # Load file
-if file.endswith(".csv"):
-    df = pd.read_csv(file)
-else:
-    df = pd.read_excel(file)
+try:
+    if file.endswith(".csv"):
+        df = pd.read_csv(file)
+    else:
+        df = pd.read_excel(file, engine="openpyxl")
+except Exception as e:
+    print(f"❌ Failed to load file: {e}")
+    exit()
 
 # Create report folder
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
