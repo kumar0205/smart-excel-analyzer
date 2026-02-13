@@ -1,7 +1,8 @@
 __pycache__/
 *.py[cod]
 *$py.class
-reports/
+reports/*
+!reports/report_20260213_181531/
 .env
 .vscode/
 .idea/

@@ -1,0 +1,16 @@
+
+========================================
+           BUSINESS REPORT
+========================================
+Report Date   : 2026-02-13 18:15:31
+Total Revenue : 89,229.00
+Total Orders  : 34
+Avg Order Val : 2,624.38
+----------------------------------------
+Best Selling Product  : Sneakers
+Top Category          : Clothing
+Top Customer          : Meena Das
+Top City              : Hyderabad
+----------------------------------------
+Sales Growth (MoM)    : -26.5%
+========================================
