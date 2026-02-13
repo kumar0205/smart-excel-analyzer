@@ -3,6 +3,10 @@
 Transform raw CSV/Excel data into **Professional Business Insights** in seconds. Designed for business owners who need clarity, speed, and beautiful visualizations.
 
 ---
+## 🎥 Demo
+
+https://github.com/kumar0205/smart-excel-analyzer/demo.mp4
+
 
 ## 🚀 Why Use This Analyser?
 
