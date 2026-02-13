@@ -1,0 +1,74 @@
+# 📊 Pro Excel & Sales Analyser
+
+Transform raw CSV/Excel data into **Professional Business Insights** in seconds. Designed for business owners who need clarity, speed, and beautiful visualizations.
+
+---
+
+## 🚀 Why Use This Analyser?
+
+Stop struggling with complex pivot tables and manual calculations. Our analyser provides:
+
+- **✨ Smart Intelligence**: Automatically detects columns for Dates, Products, Customers, Cities, and Categories.
+- **📈 Growth Tracking**: Instant **Month-on-Month (MoM)** sales growth calculations.
+- **🏆 Performance Leaderboards**: Identify your top-performing products, customers, and cities immediately.
+- **🖼️ Data Visuals**: Automatically generates 4+ high-quality charts for your presentations.
+
+---
+
+## 📋 Professional Report Preview
+
+Every run generates a sleek, structured report like this:
+
+```text
+========================================
+           BUSINESS REPORT
+========================================
+Total Revenue : 89,229.00
+Total Orders  : 34
+Avg Order Val : 2,624.38
+----------------------------------------
+Best Selling Product  : Sneakers
+Top Category          : Clothing
+Top Customer          : Meena Das
+Top City              : Hyderabad
+----------------------------------------
+Sales Growth (MoM)    : +15.5%
+========================================
+```
+
+---
+
+## 🛠️ Quick Start
+
+### 1. Installation
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run the Analysis
+```bash
+python3 analyzer.py
+```
+Just enter your file path 
+Enter Excel/CSV path: (e.g., `sample_data/sales_data.csv`) and let the tool do the magic.
+
+---
+
+## 🎨 Visual Insights Included
+The tool automatically saves these to your `reports` folder:
+1. **Top 10 Products** (Bar Chart)
+2. **Revenue by Category** (Pie Chart)
+3. **Monthly Revenue Trend** (Line Graph)
+4. **City-wise Performance** (Horizontal Bar Chart)
+
+---
+
+## 💰 Get the Full Version
+Looking for custom features, automated email reports, or a web dashboard?
+
+### **Interested in the Pro Version?**
+👉 **DM me now to get your custom business analyser!**
+*Customizations available for ERP integration, Tax calculations, and automated scheduling.*
+
+---
+*Created by [kumar0205]*
